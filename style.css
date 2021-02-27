@@ -3,10 +3,25 @@
     padding: 0;
     font-family: sans-serif;
 }
+.hori{
+    flex-direction: row;
+    justify-content: center;
+}
+.top1 a{
+    text-decoration: none;
+    margin: 20px;
+    float: left;
+    background-image: none;
+}
+.top2 a{
+    float: right;
+    text-decoration: none;
+    margin: 3px;
+}
 .fight{
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(planner.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(img/planner.jpg);
     background-position: center;
     background-size: cover;
     position: absolute;
