@@ -4,7 +4,7 @@
     font-family: sans-serif;
 }
 body{
-    background-color: #fedcc6;
+    background-color: #facbd0;
 }
 .top1 a{
     text-decoration: none;
@@ -23,6 +23,10 @@ body{
     text-decoration: none;
     padding: 5px;
     margin: 5px;
+}
+.head{
+    font-size: 40px;
+    text-align: center;
 }
 .fight{
     height: 100%;
