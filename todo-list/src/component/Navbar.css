@@ -1,0 +1,13 @@
+.navBarRightSide a {
+  margin: 0 24px;
+  text-decoration: none;
+  color: darkslateblue;
+  padding: 12px 24px;
+  transition: 0.3s;
+}
+.navBarRightSide a:hover {
+  background-color: black;
+  color: antiquewhite;
+
+  border-radius: 999px;
+}
