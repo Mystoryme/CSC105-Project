@@ -1,7 +1,8 @@
 import { useState } from "react";
-import LoginForm1 from "../component/Loginform/LoginForm1";
+import LoginForm1 from "../component/Loginform/LoginForm1/LoginForm1";
 import LoginForm2 from "../component/Loginform/LoginForm2";
 import Socialicon from "../component/Socialicon/Social-icon";
+import "./Login.css";
 import { Link } from "react-router-dom";
 import MiniNavbar from "../component/MiniNavbar";
 //
@@ -18,9 +19,9 @@ const Login = () => {
   };
   return (
     <div>
-      <div class="fight">
-        <div class="form-box">
-          <div class="button-box">
+      <div className="fight">
+        <div className="form-box">
+          <div className="button-box">
             <button
               type="button"
               class={`toggle-btn-login ${isLogin ? "btn-color" : ""}`}
@@ -43,10 +44,8 @@ const Login = () => {
             }}
           >
             <div
+              className="login-a"
               style={{
-                display: "flex",
-                width: "200%",
-                transition: "1s",
                 transform: isLogin ? "translateX(0%)" : "translateX(-50%)",
               }}
             >

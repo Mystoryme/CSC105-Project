@@ -5,19 +5,22 @@ import "./App.css";
 import "./reset/base.css";
 import Login from "./page/Login";
 import Calendar from "./page/Calendar";
+import Home from "./component/banner/Home";
 //
 const App = () => {
   return (
     <Router>
       <div>
         <Navbar />
-
         <Switch>
           <Route path="/login">
             <Login />
           </Route>
           <Route path="/calendar">
             <Calendar />
+          </Route>
+          <Route path="/Home">
+            <Home />
           </Route>
           <Route path="/"></Route>
         </Switch>

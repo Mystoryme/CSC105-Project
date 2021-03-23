@@ -6,6 +6,7 @@ const Calendar = () => {
     <div
       style={{
         margin: " 20px 40px",
+        marginTop: "80px",
       }}
     >
       <CalendarView />

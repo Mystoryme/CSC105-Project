@@ -47,6 +47,7 @@ body {
   background: #fff;
   padding: 5px;
   overflow: hidden;
+  margin-top: 64px;
 }
 .button-box {
   width: 220px;

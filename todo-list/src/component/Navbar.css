@@ -11,3 +11,16 @@
 
   border-radius: 999px;
 }
+.navBar-box {
+  width: calc(100% - 48px);
+  height: 64px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 20%);
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}

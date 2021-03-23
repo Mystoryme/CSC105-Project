@@ -2,7 +2,7 @@ import React from "react";
 
 const socialicon = () => {
   return (
-    <div class="social-icons">
+    <div className="social-icons">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

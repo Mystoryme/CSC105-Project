@@ -2,21 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../img/logo.png";
+import {
+  faCalendarAlt,
+  faHome,
+  faSignInAlt,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Navbar = () => {
   return (
-    <div
-      style={{
-        width: "calc(100% - 48px)",
-        height: "64px",
-        backgroundColor: "white",
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        padding: "0 24px",
-        boxShadow: "0px 5px 10px 0px rgb(0 0 0 / 20%)",
-      }}
-    >
+    <div className="navBar-box">
       <div
         style={{
           display: "flex",
@@ -30,7 +25,16 @@ const Navbar = () => {
             marginRight: "15px",
           }}
         />
-        <h3>My.plan</h3>
+        <h3>
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+            }}
+          >
+            My.plan{" "}
+          </Link>
+        </h3>
       </div>
       <div
         className="navBarRightSide"
@@ -39,9 +43,33 @@ const Navbar = () => {
           alignItems: "baseline",
         }}
       >
-        <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
-        <Link to="/calendar">Calendar</Link>
+        <Link to="/Home">
+          <FontAwesomeIcon
+            icon={faHome}
+            style={{
+              marginRight: "10px",
+            }}
+          />
+          Home
+        </Link>
+        <Link to="/calendar">
+          <FontAwesomeIcon
+            icon={faCalendarAlt}
+            style={{
+              marginRight: "10px",
+            }}
+          />
+          Calendar
+        </Link>
+        <Link to="/login">
+          <FontAwesomeIcon
+            icon={faSignInAlt}
+            style={{
+              marginRight: "10px",
+            }}
+          />
+          Login
+        </Link>
       </div>
     </div>
   );

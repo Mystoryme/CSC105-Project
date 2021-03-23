@@ -1,5 +1,6 @@
 import React from "react";
 import TextField from "@material-ui/core/TextField";
+import "./LoginForm1.css";
 
 const LoginForm1 = () => {
   return (
@@ -31,13 +32,7 @@ const LoginForm1 = () => {
         placeholder="Enter Password"
         required
       /> */}
-      <div
-        className="login-form1"
-        style={{
-          display: "flex",
-          alignItems: "center",
-        }}
-      >
+      <div className="login-form1">
         <input type="checkbox" class="check-box" />
         <span>Remember Password</span>
       </div>
