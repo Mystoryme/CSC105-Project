@@ -27,7 +27,7 @@ const Navbar = () => {
         />
         <h3>
           <Link
-            to="/"
+            to="/Home"
             style={{
               textDecoration: "none",
             }}
