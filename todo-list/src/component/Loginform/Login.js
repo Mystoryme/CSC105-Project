@@ -1,6 +1,7 @@
 import React from "react";
 import TextField from "@material-ui/core/TextField";
-import "./LoginForm1.css";
+import "../../style/Login/LoginForm.css";
+import { Link } from "react-router-dom";
 
 const LoginForm1 = () => {
   return (
@@ -36,9 +37,11 @@ const LoginForm1 = () => {
         <input type="checkbox" class="check-box" />
         <span>Remember Password</span>
       </div>
-      <button type="submit" class="submit-btn">
-        Log in
-      </button>
+      <Link to="/calendar">
+        <button type="submit" class="submit-btn">
+          Log in
+        </button>
+      </Link>
     </form>
   );
 };

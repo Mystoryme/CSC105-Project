@@ -30,9 +30,10 @@ const Navbar = () => {
             to="/Home"
             style={{
               textDecoration: "none",
+              color: "darkslateblue",
             }}
           >
-            My.plan{" "}
+            MyPlan{" "}
           </Link>
         </h3>
       </div>

@@ -5,8 +5,14 @@ import "./App.css";
 import "./reset/base.css";
 import Login from "./page/Login";
 import Calendar from "./page/Calendar";
-import Home from "./component/banner/Home";
+import Home from "./page/Home";
 import Footer from "./component/footer/Footer";
+import { Fab } from "@material-ui/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faChevronCircleUp,
+  faChevronUp,
+} from "@fortawesome/free-solid-svg-icons";
 //
 const App = () => {
   return (
@@ -21,14 +27,28 @@ const App = () => {
             <Route path="/calendar">
               <Calendar />
             </Route>
-            <Route path="/Home">
+            <Route path="/home">
               <Home />
             </Route>
-            <Route path="/"></Route>
+            <Route path="/">
+              <Home />
+            </Route>
           </Switch>
         </div>
+        <Footer />
       </Router>
-      <Footer />
+      <Fab
+        style={{
+          position: "fixed",
+          right: "24px",
+          bottom: "24px",
+          zIndex: "2000",
+          backgroundColor: "white",
+        }}
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      >
+        <FontAwesomeIcon icon={faChevronUp} />
+      </Fab>
     </div>
   );
 };

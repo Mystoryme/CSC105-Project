@@ -1,3 +1,28 @@
 .main-footer {
+  width: 100%;
+  background: linear-gradient(328deg, #a6e1ff, #ffe995, #f18794); /*right*/
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
   display: flex;
+  flex-direction: column;
+  color: #4b4b4b;
+}
+.container > .row:first-child {
+  display: flex;
+}
+.container > .row:last-child {
+  margin: 40px 0px;
+}
+.container > .row:first-child > .col {
+  flex: 1;
+}
+.container > .row:first-child > .col > h4 {
+  font-size: 24px;
+  margin: 40px 0 10px;
+}
+.container > .row:first-child > .col > p {
+  line-height: 22px;
 }

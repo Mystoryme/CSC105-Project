@@ -5,10 +5,19 @@
   padding: 12px 24px;
   transition: 0.3s;
 }
-.navBarRightSide a:hover {
-  background-color: black;
-  color: antiquewhite;
-
+.navBarRightSide a:nth-child(1):hover {
+  background-color: #f18794;
+  color: white;
+  border-radius: 999px;
+}
+.navBarRightSide a:nth-child(2):hover {
+  background-color: #fce175;
+  color: white;
+  border-radius: 999px;
+}
+.navBarRightSide a:nth-child(3):hover {
+  background-color: #a6e1ff;
+  color: white;
   border-radius: 999px;
 }
 .navBar-box {

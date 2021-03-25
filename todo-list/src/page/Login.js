@@ -1,8 +1,8 @@
 import { useState } from "react";
-import LoginForm1 from "../component/Loginform/LoginForm1/LoginForm1";
-import LoginForm2 from "../component/Loginform/LoginForm2";
+import Login1 from "../component/Loginform/Login";
+import SignUp from "../component/Loginform/SignUp";
 import Socialicon from "../component/Socialicon/Social-icon";
-import "./Login.css";
+import "../style/Login/Login.css";
 import { Link } from "react-router-dom";
 import MiniNavbar from "../component/MiniNavbar";
 //
@@ -49,8 +49,8 @@ const Login = () => {
                 transform: isLogin ? "translateX(0%)" : "translateX(-50%)",
               }}
             >
-              <LoginForm1 />
-              <LoginForm2 />
+              <Login1 />
+              <SignUp />
             </div>
           </div>
         </div>
