@@ -19,16 +19,58 @@
 .boxup {
   position: relative;
 }
-.boxup > img {
+.flower {
   width: 570px;
   position: absolute;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 .getstart:hover {
   transform: scale(1.1);
 }
 .getstart {
   transition: 0.4s;
+}
+.cloud {
+  width: 300px;
+  position: absolute;
+  bottom: 27vh;
+  right: 40vw;
+  animation: moveCloud infinite 60s;
+}
+.cloud2 {
+  width: 300px;
+  position: absolute;
+  top: 10vh;
+  left: 40vw;
+  z-index: 1;
+  animation: moveCloud2 infinite 60s;
+}
+@keyframes moveCloud {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(1100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes moveCloud2 {
+  0% {
+    transform: translateX(0px);
+  }
+
+  50% {
+    transform: translateX(-1100px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
 }
