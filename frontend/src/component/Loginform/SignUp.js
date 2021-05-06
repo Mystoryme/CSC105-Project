@@ -13,7 +13,7 @@ const LoginForm2 = () => {
       <TextField
         style={{ width: "100%" }}
         // id="standard-password-input"
-        label="User Id"
+        label="User Name"
         type="text"
         autoComplete="current-password"
       />
