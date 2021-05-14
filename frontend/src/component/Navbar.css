@@ -5,6 +5,9 @@
   padding: 12px 24px;
   transition: 0.3s;
 }
+.navBarRightSide {
+  display: flex;
+}
 .navBarRightSide a:nth-child(1):hover {
   background-color: #f18794;
   color: white;

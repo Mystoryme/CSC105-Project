@@ -5,7 +5,7 @@ import Socialicon from "../component/Socialicon/Social-icon";
 import "../style/Login/Login.css";
 import { Link } from "react-router-dom";
 import MiniNavbar from "../component/MiniNavbar";
-//
+
 const Login = () => {
   const [isLogin, setIsLogin] = useState(true);
 
@@ -13,10 +13,12 @@ const Login = () => {
     console.log("login");
     setIsLogin(true);
   };
+
   const onRegisterClick = () => {
     console.log("register");
     setIsLogin(false);
   };
+
   return (
     <div>
       <div className="fight">

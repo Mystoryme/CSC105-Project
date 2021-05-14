@@ -13,7 +13,7 @@ public class MySqlConnection {
     private static Connection connection;
 
     public static Connection getConnection() throws SQLException {
-        if (!connection.isValid(200)) {
+        if (connection == null || !connection.isValid(200)) {
             return reConnect();
         }
         return connection;

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Navbar from "./component/Navbar";
 import "./App.css";
-import "./reset/base.css";
+import "./style/base.css";
 import Login from "./page/Login";
 import Calendar from "./page/Calendar";
 import Home from "./page/Home";
@@ -13,7 +13,7 @@ import {
   faChevronCircleUp,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-//
+
 const App = () => {
   return (
     <div>

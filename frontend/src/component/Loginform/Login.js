@@ -2,10 +2,34 @@ import { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import "../../style/Login/LoginForm.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import qs from "qs";
+import { useHistory } from "react-router-dom";
+import Cookies from "js-cookie";
 
 const LoginForm1 = () => {
-  const login = () => {
-    console.log(email, pass);
+  const router = useHistory();
+
+  const onKeyPressed = (e) => {
+    if (e.key == "Enter") {
+      login();
+    }
+  };
+
+  const login = async () => {
+    const islogin = await axios.post(
+      "http://localhost:8080/account/login",
+      qs.stringify({
+        email: email,
+        password: pass,
+      })
+    );
+
+    if (islogin.data.isLogin) {
+      Cookies.set("userid", islogin.data.user_id);
+      Cookies.set("username", islogin.data.username);
+      window.location.href = "/Home";
+    }
   };
 
   const [email, setEmail] = useState("");
@@ -46,6 +70,7 @@ const LoginForm1 = () => {
         type="password"
         autoComplete="current-password"
         onChange={passChange}
+        onKeyDown={onKeyPressed}
       />
       {/* <input
         type="password"

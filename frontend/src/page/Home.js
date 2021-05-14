@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import { Link } from "react-router-dom";
 import Flowerline from "../img/flowerline.png";
 import Cloud from "../img/cloud.png";
+import Cookies from "js-cookie";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
       </div>
       <div className="getstart">
         <Link
-          to="/login"
+          to={Cookies.get("userid") ? "/calendar" : "/login"}
           style={{
             textDecoration: "none",
           }}
